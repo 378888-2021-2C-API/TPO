@@ -86,7 +86,7 @@ const styles = (theme) => ({
 function ProductCategories(props) {
   const { classes } = props;
 
-  const images = [
+  const articules = [
     {
       url:
         'https://images.unsplash.com/photo-1534081333815-ae5019106622?auto=format&fit=crop&w=400&q=80',
@@ -146,10 +146,10 @@ function ProductCategories(props) {
   return (
     <Container className={classes.root} component="section">
       <Typography variant="h4" marked="center" align="center" component="h2">
-        For all tastes and all desires
+        Informacion que puede interesarte
       </Typography>
       <div className={classes.images}>
-        {images.map((image) => (
+        {articules.map((image) => (
           <ButtonBase
             key={image.title}
             className={classes.imageWrapper}
