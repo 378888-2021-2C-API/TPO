@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Field, Form, FormSpy } from "react-final-form";
+import { makeStyles } from '@material-ui/core/styles';
 import Box from "@mui/material/Box";
 import Link from "@mui/material/Link";
 import Typography from "../components/Typography";
@@ -11,7 +12,21 @@ import RFTextField from "../components/form/RFTextField";
 import FormButton from "../components/form/FormButton";
 import FormFeedback from "../components/form/FormFeedback";
 
+const useStyles = makeStyles((theme) => ({
+  form: {
+    marginTop: theme.spacing(6),
+  },
+  button: {
+    marginTop: theme.spacing(3),
+    marginBottom: theme.spacing(2),
+  },
+  feedback: {
+    marginTop: theme.spacing(2),
+  },
+}));
+
 export default function SignIn() {
+  const classes = useStyles();
   const [sent, setSent] = React.useState(false);
 
   const validate = (values) => {
@@ -37,12 +52,12 @@ export default function SignIn() {
       <AppForm>
         <React.Fragment>
           <Typography variant="h3" gutterBottom marked="center" align="center">
-            Sign In
+            Ingresar
           </Typography>
           <Typography variant="body2" align="center">
-            {"Not a member yet? "}
+            {"¿No estas registrado? "}
             <Link href="/sign-up/" align="center" underline="always">
-              Sign Up here
+              Registrase
             </Link>
           </Typography>
         </React.Fragment>
@@ -50,6 +65,7 @@ export default function SignIn() {
           onSubmit={handleSubmit}
           subscription={{ submitting: true }}
           validate={validate}
+          className={classes.form}
         >
           {({ handleSubmit: handleSubmit2, submitting }) => (
             <Box

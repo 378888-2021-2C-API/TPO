@@ -55,7 +55,7 @@ export default function AppFooter() {
     <Typography component="footer" className={classes.root}>
       <Container className={classes.container}>
         <Grid container spacing={5}>
-          <Grid item xs={6} sm={4} md={3}>
+          {/* <Grid item xs={6} sm={4} md={3}>
             <Grid
               container
               direction="column"
@@ -72,8 +72,8 @@ export default function AppFooter() {
                 </a>
               </Grid>
             </Grid>
-          </Grid>
-          <Grid item xs={12} sm={12} md={6}>
+          </Grid> */}
+          {/* <Grid item xs={12} sm={12} md={6}>
             <Typography variant="h6" marked="left" gutterBottom>
               Legal
             </Typography>
@@ -85,7 +85,7 @@ export default function AppFooter() {
                 <Link href="/privacy/">Privacidad</Link>
               </li>
             </ul>
-          </Grid>
+          </Grid> */}
         </Grid>
       </Container>
     </Typography>

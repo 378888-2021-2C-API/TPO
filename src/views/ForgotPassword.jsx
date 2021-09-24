@@ -36,11 +36,10 @@ export default function ForgotPassword() {
       <AppForm>
         <React.Fragment>
           <Typography variant="h3" gutterBottom marked="center" align="center">
-            Forgot your password?
+            ¿Olvidaste tu contraseña?
           </Typography>
           <Typography variant="body2" align="center">
-            {"Enter your email address below and we'll " +
-              "send you a link to reset your password."}
+            {"Ingresa tu mail abajo para que te enviemos un link para reestablecer tu contraseñas"}
           </Typography>
         </React.Fragment>
         <Form

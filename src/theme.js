@@ -1,5 +1,7 @@
 import { createMuiTheme } from '@material-ui/core/styles';
 import { green, grey, red } from '@material-ui/core/colors';
+import 'typeface-roboto-condensed';
+import 'typeface-work-sans';
 
 const rawTheme = createMuiTheme({
   palette: {
