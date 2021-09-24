@@ -116,7 +116,7 @@ function ProductHowItWorks(props) {
           component="a"
           href="/sign-up/"
         >
-          Get started
+          Empezá
         </Button>
       </Container>
     </section>

@@ -17,7 +17,7 @@ export default function SignUp() {
 
   const validate = (values) => {
     const errors = required(
-      ["firstName", "lastName", "email", "password"],
+      ["firstName", "lastName", "email", "dni", "phone", "password"],
       values
     );
 
@@ -94,6 +94,26 @@ export default function SignUp() {
                 label="Mail"
                 margin="normal"
                 name="email"
+                required
+              />
+              <Field
+                autoComplete="dni"
+                component={RFTextField}
+                disabled={submitting || sent}
+                fullWidth
+                label="DNI"
+                margin="normal"
+                name="dni"
+                required
+              />
+              <Field
+                autoComplete="phone"
+                component={RFTextField}
+                disabled={submitting || sent}
+                fullWidth
+                label="Telefono"
+                margin="normal"
+                name="phone"
                 required
               />
               <Field
